@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import {FaXTwitter} from 'react-icons/fa6';
 
 function Home2() {
   return (
@@ -77,12 +78,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href=""
+                  href="https://twitter.com/dhanush_nani__"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaXTwitter />
                 </a>
               </li>
               <li className="social-icons">
