@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-//import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 import pdf from "../../Assets/../Assets/RESUME.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
