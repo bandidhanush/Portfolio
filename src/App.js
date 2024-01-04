@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CirclesAnimation from "./components/CirclesAnimation";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -35,6 +36,7 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
+        <CirclesAnimation/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
