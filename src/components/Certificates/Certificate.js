@@ -6,6 +6,7 @@ import CNPL from "../../Assets/Certificates/CNPL.png";
 import Debate from "../../Assets/Certificates/Debate.jpg";
 import TalentBattle from "../../Assets/Certificates/TalentBattle.png";
 import RapidMiner from "../../Assets/Certificates/RapidMiner.png";
+import DataAnalytics from "../../Assets/Certificates/DataAnalytics.png";
 
 
 function Certificates() {
@@ -30,6 +31,13 @@ function Certificates() {
           </Col> */}
           <Col md={4} className="project-card">
             <CertificateCards
+              imgPath={DataAnalytics}
+              isBlog={false}
+              title="Data Analytics"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <CertificateCards
               imgPath={TalentBattle}
               isBlog={false}
               title="Talent Battle"
@@ -39,10 +47,10 @@ function Certificates() {
             <CertificateCards
               imgPath={RapidMiner}
               isBlog={false}
-              title="Rapid Miner" 
+              title="Rapid Miner"
             />
           </Col>
-          
+
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
@@ -67,14 +75,14 @@ function Certificates() {
           </Col>*/}
         </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <CertificateCards
               imgPath={CNPL}
               isBlog={false}
               title="Coding Ninjas"
             />
-            </Col>
-            <Col md={4} className="project-card">
+          </Col>
+          <Col md={4} className="project-card">
             <CertificateCards
               imgPath={Debate}
               isBlog={false}

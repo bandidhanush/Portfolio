@@ -7,6 +7,8 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Certificates from "./components/Certificates/Certificate";
+import Contact from "./components/Contact/Contact";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -36,14 +38,15 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <CirclesAnimation/>
+        <CirclesAnimation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/certificate" element={<Certificates />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
